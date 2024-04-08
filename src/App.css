@@ -1,0 +1,185 @@
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #34495e; /* Updated text color for better readability */
+  background-color: #ecf0f1; /* Light grey background for a subtle look */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #bdc3c7; /* Soft blue-grey for container background */
+  border-radius: 15px;
+  box-shadow: 20px 20px 60px #bebebe,
+              -20px -20px 60px #ffffff; /* Neumorphism effect */
+}
+
+.upload-strategy, .action-tabs {
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  background-color: #3498db; /* Vivid blue for action buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #a7a7a7,
+              -5px -5px 15px #ffffff; /* Neumorphism effect on buttons */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.action-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 5px #a7a7a7,
+              -2px -2px 5px #ffffff; /* Subtle hover effect */
+}
+
+.upload-btn {
+  background-color: #e74c3c; /* Warm red for the upload button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #a7a7a7,
+              -5px -5px 15px #ffffff; /* Consistent neumorphism effect */
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.upload-btn i {
+  margin-right: 5px;
+}
+
+.logs-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logs-container {
+  display: flex;
+  margin: 40px;
+  justify-content: space-between;
+}
+
+.logs-output, .error-logs {
+  flex: 1;
+  min-width: 48%; /* Adjusts to allow half the container width to each */
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.card {
+  background-color: #ffffff; /* Pure white for cards to stand out */
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #a7a7a7,
+              -5px -5px 15px #ffffff; /* Neumorphism effect on cards */
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #2c3e50; /* Dark blue for headers */
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+.fullscreen-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: #95a5a6; /* Grey button for minimal contrast */
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.fullscreen-btn:hover {
+  background-color: #7f8c8d; /* Darker grey on hover */
+}
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: #ecf0f1;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 40%; /* Set a width for the modal */
+}
+
+.close-btn {
+  float: right;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.json-input {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.json-preview {
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.copy-btn i {
+  font-size: 16px;
+}
+
+.error {
+  color: #e74c3c;
+}
+.submit-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
