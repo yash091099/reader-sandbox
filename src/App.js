@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
-const apiUrl = 'http://157.245.110.126:2101';
+const apiUrl = 'https://api-sandbox.tdmm.io';
 
 function App() {
   const [isLogsFullScreen, setIsLogsFullScreen] = useState(false);
